@@ -1,0 +1,51 @@
+Dependencies for Project 'Dio_Stm32f4', Target 'Target 1': (DO NOT MODIFY !)
+F (.\STM32F407_DIO.h)(0x5BF83DEF)()
+F (.\STM32F407_DIO.c)(0x5BE9E356)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\stm32f407_dio.o --omf_browse .\objects\stm32f407_dio.crf --depend .\objects\stm32f407_dio.d)
+I (STM32F407_DIO.h)(0x5BF83DEF)
+I (STD_TYPES.h)(0x5BD5DD7E)
+I (STM32F407_uC.h)(0x5BF2C30C)
+I (CORE_STM32F407.h)(0x5BE9E286)
+F (.\STD_TYPES.h)(0x5BD5DD7E)()
+F (.\STM32F407_Interrupt.c)(0x5BE5A15D)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\stm32f407_interrupt.o --omf_browse .\objects\stm32f407_interrupt.crf --depend .\objects\stm32f407_interrupt.d)
+I (STM32F407_Interrupt.h)(0x5BE9E355)
+I (STM32F407_DIO.h)(0x5BF83DEF)
+I (STD_TYPES.h)(0x5BD5DD7E)
+I (STM32F407_uC.h)(0x5BF2C30C)
+I (CORE_STM32F407.h)(0x5BE9E286)
+F (.\STM32F407_Interrupt.h)(0x5BE9E355)()
+F (.\CORE_STM32F407.h)(0x5BE9E286)()
+F (.\STM32F407_uC.h)(0x5BF2C30C)()
+F (.\STM32F407_SPI.c)(0x5BF2C2EC)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\stm32f407_spi.o --omf_browse .\objects\stm32f407_spi.crf --depend .\objects\stm32f407_spi.d)
+I (STM32F407_SPI.h)(0x5BF2BB4D)
+I (STM32F407_DIO.h)(0x5BF83DEF)
+I (STD_TYPES.h)(0x5BD5DD7E)
+I (STM32F407_uC.h)(0x5BF2C30C)
+I (CORE_STM32F407.h)(0x5BE9E286)
+I (STM32F407_Interrupt.h)(0x5BE9E355)
+F (.\STM32F407_SPI.h)(0x5BF2BB4D)()
+F (.\LED.h)(0x5BD5E8B4)()
+F (.\LED.c)(0x5BD5E60C)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (LED.h)(0x5BD5E8B4)
+I (STM32F407_DIO.h)(0x5BF83DEF)
+I (STD_TYPES.h)(0x5BD5DD7E)
+I (STM32F407_uC.h)(0x5BF2C30C)
+I (CORE_STM32F407.h)(0x5BE9E286)
+F (.\main.c)(0x5BF44DDF)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (led.h)(0x5BD5E8B4)
+I (STM32F407_DIO.h)(0x5BF83DEF)
+I (STD_TYPES.h)(0x5BD5DD7E)
+I (STM32F407_uC.h)(0x5BF2C30C)
+I (CORE_STM32F407.h)(0x5BE9E286)
+I (STM32F407_Interrupt.h)(0x5BE9E355)
+I (STM32F407_SPI.h)(0x5BF2BB4D)
+F (RTE\Device\STM32F407VGTx\startup_stm32f407xx.s)(0x5A8FE7C4)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx.lst --xref -o .\objects\startup_stm32f407xx.o --depend .\objects\startup_stm32f407xx.d)
+F (RTE\Device\STM32F407VGTx\system_stm32f4xx.c)(0x5A8FE7C4)(--c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5A8FE7C4)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5A8FE7C4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm4.h)(0x5B61C4E4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BD7A4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h)(0x5B1F92F4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5B589826)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5B61C4E4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\mpu_armv7.h)(0x5B61C4E4)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5A8FE7C4)

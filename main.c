@@ -1,0 +1,60 @@
+
+#include "led.h"
+#include "STM32F407_Interrupt.h"
+#include "STM32F407_SPI.h"
+#include "STM32F407_DIO.h"
+
+
+int main()
+{
+
+	CLOCK_Enable_APB1(SPI2_CLOCK);
+	
+	CLOCK_Enable_AHB1(GPIOD_CLOCK);
+	CLOCK_Enable_AHB1(GPIOA_CLOCK);
+	CLOCK_Enable_AHB1(GPIOB_CLOCK);
+	
+	
+	/* Config Sck Pin  -  SPI 2 */
+	Output_Config(GPIOB,GPIO_PIN13,PUSHPULL, OUT_HIGHSPEED,RESISTANCE_DISABLED);
+	AFunction_Config(GPIOB,AF5,GPIO_PIN13,RESISTANCE_DISABLED);
+	
+	/* COnfig MOSI pin  -  SPI2 */
+	Output_Config(GPIOB,GPIO_PIN15,PUSHPULL, OUT_HIGHSPEED,RESISTANCE_PULLUP);
+	AFunction_Config(GPIOB,AF5,GPIO_PIN15,RESISTANCE_PULLUP);
+
+	
+	/* Config MISO       -  SPI2 */
+	AFunction_Config(GPIOB,AF5,GPIO_PIN15,RESISTANCE_PULLUP);
+	
+	SPI_init(SPI2,SPI_MASTER,SPI_PRESCALE_32,SPI_BIDIR_FULL_DUBLEX,SPI_8BIT_DATA_MSBFIRST,SPI_CLKMODE1,SPI_INT_DISABLE);
+	SPI_NSS_Control(SPI2,HIGH);
+	
+	
+	
+	Input_Config(GPIOA,GPIO_PIN0,RESISTANCE_PULLDOWN);
+	
+	LED_init(Board_LEDPORT,Board_BlueLED);
+	LED_init(Board_LEDPORT,Board_GreenLED);
+	LED_init(Board_LEDPORT,Board_OrangeLED);
+	LED_init(Board_LEDPORT,Board_RedLED);
+	
+	EXTINT_Enable(GPIO_PIN0,EXTI0_IRQn,FALLING);
+
+	while(1)
+	{
+		
+		
+	}
+	
+}
+
+
+
+
+void EXTI0_IRQHandler(void)
+{
+	EXTINT_ClearPending(GPIO_PIN0);
+	LED_Toggle(Board_LEDPORT,Board_OrangeLED);
+	LED_Toggle(Board_LEDPORT,Board_RedLED);
+}
